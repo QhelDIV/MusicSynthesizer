@@ -1,0 +1,585 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     25840,        576]
+NotebookOptionsPosition[     25466,        560]
+NotebookOutlinePosition[     25813,        575]
+CellTagsIndexPosition[     25770,        572]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ToneInstrumentList", "=", 
+   RowBox[{"{", 
+    RowBox[{
+    "\"\<Accordion\>\"", ",", "\"\<Agogo\>\"", ",", "\"\<AltoSax\>\"", ",", 
+     "\"\<Applause\>\"", ",", "\"\<Atmosphere\>\"", ",", "\"\<Bagpipe\>\"", 
+     ",", "\"\<Bandoneon\>\"", ",", "\"\<Banjo\>\"", ",", 
+     "\"\<BaritoneSax\>\"", ",", "\"\<Bass\>\"", ",", "\"\<BassAndLead\>\"", 
+     ",", "\"\<Bassoon\>\"", ",", "\"\<Bird\>\"", ",", "\"\<BlownBottle\>\"", 
+     ",", "\"\<Bowed\>\"", ",", "\"\<BrassSection\>\"", ",", "\"\<Breath\>\"",
+      ",", "\"\<Brightness\>\"", ",", "\"\<BrightPiano\>\"", ",", 
+     "\"\<Calliope\>\"", ",", "\"\<Celesta\>\"", ",", "\"\<Cello\>\"", ",", 
+     "\"\<Charang\>\"", ",", "\"\<Chiff\>\"", ",", "\"\<Choir\>\"", ",", 
+     "\"\<Clarinet\>\"", ",", "\"\<Clavi\>\"", ",", "\"\<Contrabass\>\"", 
+     ",", "\"\<Crystal\>\"", ",", "\"\<DrawbarOrgan\>\"", ",", 
+     "\"\<Dulcimer\>\"", ",", "\"\<Echoes\>\"", ",", "\"\<ElectricBass\>\"", 
+     ",", "\"\<ElectricGrandPiano\>\"", ",", "\"\<ElectricGuitar\>\"", ",", 
+     "\"\<ElectricPiano\>\"", ",", "\"\<ElectricPiano2\>\"", ",", 
+     "\"\<EnglishHorn\>\"", ",", "\"\<Fiddle\>\"", ",", "\"\<Fifths\>\"", 
+     ",", "\"\<Flute\>\"", ",", "\"\<FrenchHorn\>\"", ",", 
+     "\"\<FretlessBass\>\"", ",", "\"\<FretNoise\>\"", ",", 
+     "\"\<Glockenspiel\>\"", ",", "\"\<Goblins\>\"", ",", "\"\<Guitar\>\"", 
+     ",", "\"\<GuitarDistorted\>\"", ",", "\"\<GuitarHarmonics\>\"", ",", 
+     "\"\<GuitarMuted\>\"", ",", "\"\<GuitarOverdriven\>\"", ",", 
+     "\"\<Gunshot\>\"", ",", "\"\<Halo\>\"", ",", "\"\<Harmonica\>\"", ",", 
+     "\"\<Harp\>\"", ",", "\"\<Harpsichord\>\"", ",", "\"\<Helicopter\>\"", 
+     ",", "\"\<HonkyTonkPiano\>\"", ",", "\"\<JazzGuitar\>\"", ",", 
+     "\"\<Kalimba\>\"", ",", "\"\<Koto\>\"", ",", "\"\<Marimba\>\"", ",", 
+     "\"\<MelodicTom\>\"", ",", "\"\<Metallic\>\"", ",", "\"\<MusicBox\>\"", 
+     ",", "\"\<MutedTrumpet\>\"", ",", "\"\<NewAge\>\"", ",", "\"\<Oboe\>\"", 
+     ",", "\"\<Ocarina\>\"", ",", "\"\<OrchestraHit\>\"", ",", 
+     "\"\<Organ\>\"", ",", "\"\<PanFlute\>\"", ",", "\"\<PercussiveOrgan\>\"",
+      ",", "\"\<Piano\>\"", ",", "\"\<Piccolo\>\"", ",", "\"\<PickedBass\>\"",
+      ",", "\"\<PizzicatoStrings\>\"", ",", "\"\<Polysynth\>\"", ",", 
+     "\"\<Rain\>\"", ",", "\"\<Recorder\>\"", ",", "\"\<ReedOrgan\>\"", ",", 
+     "\"\<ReverseCymbal\>\"", ",", "\"\<RockOrgan\>\"", ",", 
+     "\"\<Sawtooth\>\"", ",", "\"\<SciFi\>\"", ",", "\"\<Seashore\>\"", ",", 
+     "\"\<Shakuhachi\>\"", ",", "\"\<Shamisen\>\"", ",", "\"\<Shanai\>\"", 
+     ",", "\"\<Sitar\>\"", ",", "\"\<SlapBass\>\"", ",", "\"\<SlapBass2\>\"", 
+     ",", "\"\<SopranoSax\>\"", ",", "\"\<Soundtrack\>\"", ",", 
+     "\"\<Square\>\"", ",", "\"\<Steeldrums\>\"", ",", "\"\<SteelGuitar\>\"", 
+     ",", "\"\<Strings\>\"", ",", "\"\<Strings2\>\"", ",", "\"\<Sweep\>\"", 
+     ",", "\"\<SynthBass\>\"", ",", "\"\<SynthBass2\>\"", ",", 
+     "\"\<SynthBrass\>\"", ",", "\"\<SynthBrass2\>\"", ",", 
+     "\"\<SynthDrum\>\"", ",", "\"\<SynthStrings\>\"", ",", 
+     "\"\<SynthStrings2\>\"", ",", "\"\<SynthVoice\>\"", ",", "\"\<Taiko\>\"",
+      ",", "\"\<Telephone\>\"", ",", "\"\<TenorSax\>\"", ",", 
+     "\"\<Timpani\>\"", ",", "\"\<Tinklebell\>\"", ",", 
+     "\"\<TremoloStrings\>\"", ",", "\"\<Trombone\>\"", ",", 
+     "\"\<Trumpet\>\"", ",", "\"\<Tuba\>\"", ",", "\"\<TubularBells\>\"", 
+     ",", "\"\<Vibraphone\>\"", ",", "\"\<Viola\>\"", ",", "\"\<Violin\>\"", 
+     ",", "\"\<Voice\>\"", ",", "\"\<VoiceAahs\>\"", ",", "\"\<VoiceOohs\>\"",
+      ",", "\"\<Warm\>\"", ",", "\"\<Whistle\>\"", ",", "\"\<Woodblock\>\"", 
+     ",", "\"\<Xylophone\>\""}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Percussion", "=", 
+   RowBox[{"{", 
+    RowBox[{
+    "\"\<BassDrum\>\"", ",", "\"\<BassDrum2\>\"", ",", "\"\<BellTree\>\"", 
+     ",", "\"\<Cabasa\>\"", ",", "\"\<Castanets\>\"", ",", 
+     "\"\<ChineseCymbal\>\"", ",", "\"\<Clap\>\"", ",", "\"\<Claves\>\"", 
+     ",", "\"\<Cowbell\>\"", ",", "\"\<CrashCymbal\>\"", ",", 
+     "\"\<CrashCymbal2\>\"", ",", "\"\<ElectricSnare\>\"", ",", 
+     "\"\<GuiroLong\>\"", ",", "\"\<GuiroShort\>\"", ",", "\"\<HighAgogo\>\"",
+      ",", "\"\<HighBongo\>\"", ",", "\"\<HighCongaMute\>\"", ",", 
+     "\"\<HighCongaOpen\>\"", ",", "\"\<HighFloorTom\>\"", ",", 
+     "\"\<HighTimbale\>\"", ",", "\"\<HighTom\>\"", ",", 
+     "\"\<HighWoodblock\>\"", ",", "\"\<HiHatClosed\>\"", ",", 
+     "\"\<HiHatOpen\>\"", ",", "\"\<HiHatPedal\>\"", ",", 
+     "\"\<JingleBell\>\"", ",", "\"\<LowAgogo\>\"", ",", "\"\<LowBongo\>\"", 
+     ",", "\"\<LowConga\>\"", ",", "\"\<LowFloorTom\>\"", ",", 
+     "\"\<LowTimbale\>\"", ",", "\"\<LowTom\>\"", ",", "\"\<LowWoodblock\>\"",
+      ",", "\"\<Maracas\>\"", ",", "\"\<MetronomeBell\>\"", ",", 
+     "\"\<MetronomeClick\>\"", ",", "\"\<MidTom\>\"", ",", "\"\<MidTom2\>\"", 
+     ",", "\"\<MuteCuica\>\"", ",", "\"\<MuteSurdo\>\"", ",", 
+     "\"\<MuteTriangle\>\"", ",", "\"\<OpenCuica\>\"", ",", 
+     "\"\<OpenSurdo\>\"", ",", "\"\<OpenTriangle\>\"", ",", 
+     "\"\<RideBell\>\"", ",", "\"\<RideCymbal\>\"", ",", 
+     "\"\<RideCymbal2\>\"", ",", "\"\<ScratchPull\>\"", ",", 
+     "\"\<ScratchPush\>\"", ",", "\"\<Shaker\>\"", ",", "\"\<SideStick\>\"", 
+     ",", "\"\<Slap\>\"", ",", "\"\<Snare\>\"", ",", "\"\<SplashCymbal\>\"", 
+     ",", "\"\<SquareClick\>\"", ",", "\"\<Sticks\>\"", ",", 
+     "\"\<Tambourine\>\"", ",", "\"\<Vibraslap\>\"", ",", 
+     "\"\<WhistleLong\>\"", ",", "\"\<WhistleShort\>\""}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"OrpheanPercussion", "=", 
+   RowBox[{"{", 
+    RowBox[{
+    "\"\<BassDrum\>\"", ",", "\"\<BassDrum2\>\"", ",", "\"\<Cabasa\>\"", ",", 
+     "\"\<Castanets\>\"", ",", "\"\<ChineseCymbal\>\"", ",", "\"\<Clap\>\"", 
+     ",", "\"\<Cowbell\>\"", ",", "\"\<CrashCymbal\>\"", ",", 
+     "\"\<CrashCymbal2\>\"", ",", "\"\<ElectricSnare\>\"", ",", 
+     "\"\<HighBongo\>\"", ",", "\"\<HighCongaMute\>\"", ",", 
+     "\"\<HighCongaOpen\>\"", ",", "\"\<HighFloorTom\>\"", ",", 
+     "\"\<HighTimbale\>\"", ",", "\"\<HighTom\>\"", ",", 
+     "\"\<HighWoodblock\>\"", ",", "\"\<HiHatClosed\>\"", ",", 
+     "\"\<HiHatOpen\>\"", ",", "\"\<HiHatPedal\>\"", ",", "\"\<LowAgogo\>\"", 
+     ",", "\"\<LowBongo\>\"", ",", "\"\<LowConga\>\"", ",", 
+     "\"\<LowFloorTom\>\"", ",", "\"\<LowTimbale\>\"", ",", "\"\<LowTom\>\"", 
+     ",", "\"\<LowWoodblock\>\"", ",", "\"\<Maracas\>\"", ",", 
+     "\"\<MetronomeClick\>\"", ",", "\"\<MidTom\>\"", ",", "\"\<MidTom2\>\"", 
+     ",", "\"\<MuteTriangle\>\"", ",", "\"\<OpenSurdo\>\"", ",", 
+     "\"\<OpenTriangle\>\"", ",", "\"\<RideBell\>\"", ",", 
+     "\"\<RideCymbal\>\"", ",", "\"\<RideCymbal2\>\"", ",", "\"\<Shaker\>\"", 
+     ",", "\"\<SideStick\>\"", ",", "\"\<Slap\>\"", ",", "\"\<Snare\>\"", 
+     ",", "\"\<SplashCymbal\>\"", ",", "\"\<SquareClick\>\"", ",", 
+     "\"\<Sticks\>\"", ",", "\"\<Tambourine\>\""}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Drums", "=", 
+   RowBox[{"{", 
+    RowBox[{
+    "\"\<BassDrum\>\"", ",", "\"\<BassDrum2\>\"", ",", 
+     "\"\<ElectricSnare\>\"", ",", "\"\<LowAgogo\>\"", ",", 
+     "\"\<LowBongo\>\"", ",", "\"\<LowConga\>\"", ",", "\"\<LowFloorTom\>\"", 
+     ",", "\"\<LowTimbale\>\"", ",", "\"\<LowTom\>\"", ",", 
+     "\"\<LowWoodblock\>\"", ",", "\"\<MidTom\>\"", ",", "\"\<MidTom2\>\"", 
+     ",", "\"\<HighFloorTom\>\"", ",", "\"\<HighTimbale\>\"", ",", 
+     "\"\<HighTom\>\"", ",", "\"\<HighWoodblock\>\""}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Accompany", "=", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<Cabasa\>\"", ",", "\"\<Castanets\>\"", ",", "\"\<ChineseCymbal\>\"",
+       ",", "\"\<Clap\>\"", ",", "\"\<Cowbell\>\"", ",", 
+      "\"\<CrashCymbal\>\"", ",", "\"\<CrashCymbal2\>\"", ",", 
+      "\"\<HighBongo\>\"", ",", "\"\<HighCongaMute\>\"", ",", 
+      "\"\<HighCongaOpen\>\"", ",", "\"\<HiHatClosed\>\"", ",", 
+      "\"\<HiHatOpen\>\"", ",", "\"\<HiHatPedal\>\"", ",", "\"\<Maracas\>\"", 
+      ",", "\"\<MetronomeClick\>\"", ",", "\"\<MuteTriangle\>\"", ",", 
+      "\"\<OpenSurdo\>\"", ",", "\"\<OpenTriangle\>\"", ",", 
+      "\"\<RideBell\>\"", ",", "\"\<RideCymbal\>\"", ",", 
+      "\"\<RideCymbal2\>\"", ",", "\"\<Shaker\>\"", ",", "\"\<SideStick\>\"", 
+      ",", "\"\<Slap\>\"", ",", "\"\<Snare\>\"", ",", "\"\<SplashCymbal\>\"", 
+      ",", "\"\<SquareClick\>\"", ",", "\"\<Sticks\>\"", ",", 
+      "\"\<Tambourine\>\""}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"GENERATE", " ", "LISTS"}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"tonumber", "=", 
+   RowBox[{"Association", "@", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"\"\<C\>\"", "\[Rule]", "0"}], ",", 
+      RowBox[{"\"\<D\>\"", "\[Rule]", "2"}], ",", 
+      RowBox[{"\"\<E\>\"", "\[Rule]", "4"}], ",", 
+      RowBox[{"\"\<F\>\"", "\[Rule]", "5"}], ",", 
+      RowBox[{"\"\<G\>\"", "\[Rule]", "7"}], ",", 
+      RowBox[{"\"\<A\>\"", "\[Rule]", "9"}], ",", 
+      RowBox[{"\"\<B\>\"", "\[Rule]", "11"}]}], "}"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"CMajor", "=", 
+   RowBox[{"Association", "@", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"1", "\[Rule]", "\"\<C\>\""}], ",", 
+      RowBox[{"2", "\[Rule]", "\"\<D\>\""}], ",", 
+      RowBox[{"3", "\[Rule]", "\"\<E\>\""}], ",", 
+      RowBox[{"4", "\[Rule]", "\"\<F\>\""}], ",", 
+      RowBox[{"5", "\[Rule]", "\"\<G\>\""}], ",", 
+      RowBox[{"6", "\[Rule]", "\"\<A\>\""}], ",", 
+      RowBox[{"7", "\[Rule]", "\"\<B\>\""}]}], "}"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"tonumber", "=", 
+   RowBox[{"Flatten", "@", 
+    RowBox[{"Table", "[", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"i", "\[NotEqual]", "\"\<B\>\""}], "&&", 
+         RowBox[{"j", "\[NotEqual]", "\"\<E\>\""}]}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"i", "<>", 
+            RowBox[{"ToString", "[", "j", "]"}]}], "\[Rule]", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"tonumber", "[", "i", "]"}], "+", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{"j", "-", "4"}], ")"}], "*", "12"}]}], ")"}]}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"i", "<>", "\"\<#\>\"", "<>", 
+            RowBox[{"ToString", "[", "j", "]"}]}], "\[Rule]", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"tonumber", "[", "i", "]"}], "+", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{"j", "-", "4"}], ")"}], "*", "12"}], "+", "1"}], 
+            ")"}]}]}], "}"}], "\[IndentingNewLine]", ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"i", "<>", 
+           RowBox[{"ToString", "[", "j", "]"}]}], "\[Rule]", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"tonumber", "[", "i", "]"}], "+", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"j", "-", "4"}], ")"}], "*", "12"}]}], ")"}]}], "}"}]}],
+        "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{"i", ",", 
+        RowBox[{"CharacterRange", "[", 
+         RowBox[{"\"\<A\>\"", ",", "\"\<G\>\""}], "]"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"j", ",", "1", ",", "9"}], "}"}]}], "]"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"CMajor", "=", 
+   RowBox[{"Association", "@@", 
+    RowBox[{"Table", "[", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"i", "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"j", "-", "4"}], ")"}], "*", "7"}]}], ")"}], "->", 
+       RowBox[{
+        RowBox[{"CMajor", "[", "i", "]"}], "<>", 
+        RowBox[{"ToString", "[", "j", "]"}]}]}], ",", "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{"i", ",", "1", ",", "7"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"j", ",", "1", ",", "9"}], "}"}]}], "]"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"tochar", "=", "tonumber"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Do", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"tochar", "[", 
+       RowBox[{"[", "i", "]"}], "]"}], "=", 
+      RowBox[{"Reverse", "@", 
+       RowBox[{"tochar", "[", 
+        RowBox[{"[", "i", "]"}], "]"}]}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", 
+       RowBox[{"Length", "[", "tonumber", "]"}]}], "}"}]}], "]"}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"tonumber", "=", 
+   RowBox[{"Association", "@", "tonumber"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"tochar", "=", 
+    RowBox[{"Association", "@", "tochar"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"musictemplate", "[", 
+     RowBox[{"set_", ",", 
+      RowBox[{"ti_:", "0.1"}], ",", 
+      RowBox[{"instrument_:", "\"\<Piano\>\""}]}], "]"}], ":=", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Flatten", "@", "\[IndentingNewLine]", 
+     RowBox[{"Table", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"SoundNote", "[", 
+          RowBox[{"#", ",", 
+           RowBox[{"ti", 
+            RowBox[{"{", 
+             RowBox[{"i", ",", 
+              RowBox[{"i", "+", "ti", "+", "1"}]}], "}"}]}], ",", 
+           "instrument"}], "]"}], "&"}], "/@", 
+        RowBox[{"set", "[", 
+         RowBox[{"[", "i", "]"}], "]"}]}], ",", "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", "1", ",", 
+         RowBox[{"Length", "[", "set", "]"}]}], "}"}]}], 
+      "\[IndentingNewLine]", "]"}]}]}], ";"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"DEFINE", " ", "FUNCTIONS"}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"findSubsequence", "[", 
+    RowBox[{"list_", ",", 
+     RowBox[{"{", "ss__", "}"}]}], "]"}], ":=", 
+   RowBox[{"ReplaceList", "[", 
+    RowBox[{"list", ",", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"pre___", ",", "ss", ",", "___"}], "}"}], "\[RuleDelayed]", 
+      RowBox[{
+       RowBox[{"Length", "[", 
+        RowBox[{"{", "pre", "}"}], "]"}], "+", "1"}]}]}], "]"}]}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.6249529174179907`*^9, 3.624952918891018*^9}, {
+   3.6249529507096605`*^9, 3.6249529978953323`*^9}, {3.6249530724774284`*^9, 
+   3.6249531508041477`*^9}, 3.6249531815997486`*^9, 3.6249532783385906`*^9, {
+   3.6249533145013075`*^9, 3.6249533210559897`*^9}, {3.6249534082386074`*^9, 
+   3.62495342728218*^9}, {3.6249537414265547`*^9, 3.6249537417537904`*^9}, {
+   3.6249540474076815`*^9, 3.624954107547059*^9}, {3.6249541466509085`*^9, 
+   3.624954157349522*^9}, {3.624954231986615*^9, 3.6249543567015066`*^9}, 
+   3.624954489662942*^9, {3.6249545316608295`*^9, 3.624954536298147*^9}, 
+   3.624954568168807*^9, {3.624954920466878*^9, 3.624954924272607*^9}, {
+   3.6249590096537075`*^9, 3.6249590116561327`*^9}, {3.625127897376034*^9, 
+   3.6251278983087187`*^9}, {3.6251289986936874`*^9, 
+   3.6251290001627307`*^9}, {3.6251290515037837`*^9, 3.625129072942048*^9}, {
+   3.625129514752617*^9, 3.6251295436331806`*^9}, 3.625130085758159*^9, {
+   3.625299802298404*^9, 3.6252998068176165`*^9}, {3.6252999241010284`*^9, 
+   3.6252999261074553`*^9}, {3.6252999765967517`*^9, 
+   3.6252999796489244`*^9}, {3.626404416964774*^9, 3.62640443606481*^9}, {
+   3.6264051040886173`*^9, 3.6264051232632856`*^9}, {3.6264053035856004`*^9, 
+   3.626405350071535*^9}, {3.6264053815851974`*^9, 3.626405485730363*^9}, {
+   3.626405708649581*^9, 3.626405798872422*^9}, {3.6264058940174456`*^9, 
+   3.626405969560856*^9}, {3.6264060048922*^9, 3.626406009540498*^9}, {
+   3.628844555366888*^9, 3.6288445583810267`*^9}, {3.62884644102988*^9, 
+   3.628846636269681*^9}, 3.6288466781818523`*^9, {3.628846776923848*^9, 
+   3.6288468052699747`*^9}, {3.6288468546189437`*^9, 3.628846881817272*^9}, {
+   3.628846939867409*^9, 3.6288470190555744`*^9}, {3.628847121375272*^9, 
+   3.6288471534590287`*^9}, {3.628847189946945*^9, 3.6288472362527347`*^9}, {
+   3.628847285377556*^9, 3.628847287215881*^9}, {3.628847510010955*^9, 
+   3.628847535265867*^9}, {3.629696758451641*^9, 3.6296968066639137`*^9}, 
+   3.6296972277450595`*^9, {3.6296973324537926`*^9, 3.629697334751424*^9}, 
+   3.629697440407694*^9, {3.629709306491782*^9, 3.629709312933319*^9}, {
+   3.62971370386736*^9, 3.629713705078181*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"TransformFromMidi", "[", "position_String", "]"}], ":=", 
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Music", "=", 
+      RowBox[{"Import", "[", "position", "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Music", "[", 
+       RowBox[{"[", "1", "]"}], "]"}], "=", 
+      RowBox[{"Sort", "[", 
+       RowBox[{
+        RowBox[{"Music", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], ",", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"#1", "[", 
+           RowBox[{"[", 
+            RowBox[{"2", ",", "1"}], "]"}], "]"}], "<", 
+          RowBox[{"#2", "[", 
+           RowBox[{"[", 
+            RowBox[{"2", ",", "1"}], "]"}], "]"}]}], "&"}]}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"tonality", "=", 
+      RowBox[{"Select", "[", 
+       RowBox[{
+        RowBox[{"Music", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], ",", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"ToString", "[", 
+           RowBox[{"Head", "[", 
+            RowBox[{"#", "[", 
+             RowBox[{"[", "3", "]"}], "]"}], "]"}], "]"}], "!=", 
+          RowBox[{"ToString", "[", "Rule", "]"}]}], "&"}]}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"percussion", "=", 
+      RowBox[{"Select", "[", 
+       RowBox[{
+        RowBox[{"Music", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], ",", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"ToString", "[", 
+           RowBox[{"Head", "[", 
+            RowBox[{"#", "[", 
+             RowBox[{"[", "3", "]"}], "]"}], "]"}], "]"}], "==", 
+          RowBox[{"ToString", "[", "Rule", "]"}]}], "&"}]}], "]"}]}], ";", 
+     "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{"InstrumentList", "=", 
+      RowBox[{"DeleteDuplicates", "[", 
+       RowBox[{
+        RowBox[{"tonality", "[", 
+         RowBox[{"[", 
+          RowBox[{"All", ",", "3"}], "]"}], "]"}], "~", "Join", "~", 
+        RowBox[{"percussion", "[", 
+         RowBox[{"[", 
+          RowBox[{"All", ",", "1"}], "]"}], "]"}]}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"ToneInstrumentList", "=", 
+      RowBox[{"DeleteDuplicates", "[", 
+       RowBox[{"tonality", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "3"}], "]"}], "]"}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"PercussionInstrumentList", "=", 
+      RowBox[{"DeleteDuplicates", "[", 
+       RowBox[{"percussion", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "1"}], "]"}], "]"}], "]"}]}], ";"}], 
+    "\[IndentingNewLine]", "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.6249529174179907`*^9, 3.624952918891018*^9}, {
+   3.6249529507096605`*^9, 3.6249529978953323`*^9}, {3.6249530724774284`*^9, 
+   3.6249531508041477`*^9}, 3.6249531815997486`*^9, 3.6249532783385906`*^9, {
+   3.6249533145013075`*^9, 3.6249533210559897`*^9}, {3.6249534082386074`*^9, 
+   3.62495342728218*^9}, {3.6249537414265547`*^9, 3.6249537417537904`*^9}, {
+   3.6249540474076815`*^9, 3.62495406296173*^9}, {3.624956098343522*^9, 
+   3.624956145594186*^9}, {3.6249579986453915`*^9, 3.624957999778161*^9}, {
+   3.624958088204522*^9, 3.6249581178095875`*^9}, 3.6249582629520216`*^9, {
+   3.624958317656972*^9, 3.6249584229680414`*^9}, {3.6249585007484283`*^9, 
+   3.624958504910373*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"musictable", "[", "]"}], ":=", 
+   RowBox[{"Print", "@", 
+    RowBox[{"Row", "@", 
+     RowBox[{"Table", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Overscript", "[", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"Sound", "[", "\[IndentingNewLine]", 
+          RowBox[{"Select", "[", 
+           RowBox[{"tonality", ",", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"#", "[", 
+               RowBox[{"[", "3", "]"}], "]"}], "\[Equal]", 
+              RowBox[{"ToneInstrumentList", "[", 
+               RowBox[{"[", "i", "]"}], "]"}]}], "&"}]}], "]"}], 
+          "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"ToneInstrumentList", "[", 
+          RowBox[{"[", "i", "]"}], "]"}]}], "\[IndentingNewLine]", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", "1", ",", 
+         RowBox[{"Length", "[", "ToneInstrumentList", "]"}]}], "}"}]}], 
+      "]"}]}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.6249529174179907`*^9, 3.624952918891018*^9}, {
+   3.6249529507096605`*^9, 3.6249529978953323`*^9}, {3.6249530724774284`*^9, 
+   3.6249531508041477`*^9}, 3.6249531815997486`*^9, 3.6249532783385906`*^9, {
+   3.6249533145013075`*^9, 3.6249533210559897`*^9}, {3.6249534082386074`*^9, 
+   3.62495342728218*^9}, {3.6249537414265547`*^9, 3.6249537417537904`*^9}, {
+   3.6249540474076815`*^9, 3.62495406296173*^9}, {3.624956098343522*^9, 
+   3.624956145594186*^9}, {3.6249579986453915`*^9, 3.624957999778161*^9}, {
+   3.624958088204522*^9, 3.6249581178095875`*^9}, 3.6249582629520216`*^9, {
+   3.624958317656972*^9, 3.6249584229680414`*^9}, {3.6249585007484283`*^9, 
+   3.624958504910373*^9}, {3.6249590224288197`*^9, 3.6249590450218763`*^9}, {
+   3.6249591330232844`*^9, 3.6249591371291847`*^9}, {3.625015933259153*^9, 
+   3.6250159347645817`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"GetMusicByInstrument", "[", "Instrument_String", "]"}], ":=", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"seletedmusic", "=", 
+       RowBox[{"Select", "[", 
+        RowBox[{"tonality", ",", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"#", "[", 
+            RowBox[{"[", "3", "]"}], "]"}], "\[Equal]", "Instrument"}], 
+          "&"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"sorted", "=", 
+       RowBox[{"Sort", "[", 
+        RowBox[{"seletedmusic", ",", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"#1", "[", 
+            RowBox[{"[", 
+             RowBox[{"2", ",", "1"}], "]"}], "]"}], "<", 
+           RowBox[{"#2", "[", 
+            RowBox[{"[", 
+             RowBox[{"2", ",", "1"}], "]"}], "]"}]}], "&"}]}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"sorted", "[", 
+        RowBox[{"[", 
+         RowBox[{"All", ",", "1"}], "]"}], "]"}], "=", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"tonumber", "[", "#", "]"}], "&"}], "/@", 
+        RowBox[{"sorted", "[", 
+         RowBox[{"[", 
+          RowBox[{"All", ",", "1"}], "]"}], "]"}]}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"distinct", "=", 
+       RowBox[{"DeleteDuplicates", "@", 
+        RowBox[{"sorted", "[", 
+         RowBox[{"[", 
+          RowBox[{"All", ",", "2", ",", "1"}], "]"}], "]"}]}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Return", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Select", "[", 
+          RowBox[{"sorted", ",", 
+           RowBox[{"With", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"\:98ce\:9a9a\:7684\:53d8\:91cf", "=", "#"}], "}"}], 
+             ",", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"#", "[", 
+                RowBox[{"[", 
+                 RowBox[{"2", ",", "1"}], "]"}], "]"}], "\[Equal]", 
+               "\:98ce\:9a9a\:7684\:53d8\:91cf"}], "&"}]}], "]"}]}], "]"}], 
+         "&"}], "/@", "distinct"}], "]"}], ";"}]}], "\[IndentingNewLine]", 
+    "]"}]}], ";"}]], "Input",
+ CellChangeTimes->CompressedData["
+1:eJwd0GtI02EYBfB52wXdak1tZpBiCE5zRTSJgtqSZBpOtCVOVzCnUeGGJJVZ
+adRyGQPzlqZWy5W1TCVKrIZ2MSkznX1YNaItp1luSaWJl6W95//h4Qfnw4Hz
+RKq06Xm+NBpNRA4m8+vPTfi4xer9fD2cs9fwFonWzq1hUHrelACzUj9QNnTs
+3QONiUpK+bxFAe2lMdmwZNh4yEvcLbIdh8GWHWfhsT9sPWTz7I+hRp87AGfi
+3w7Bqt70EVhZoLRRuW3+I3x2tMUBDRd7KcfCv03AAzceuuH6e/f/QnXjz1lo
+67zghXWsMNo/Iqtv1g9atFfoMMfnZSB0/hqnzJAKQqDg1UHK07Xt62B+VlAU
+DA0cEUK6tiwBfklO3QmbjoxLoHciLQV+dr3OhZ6mzFG6r1ucJBa6YLdGpGYQ
+zR49pYSl0sKihcZCuD1AVwJVjopqGG1MrIeDqvIGuDkmtxmKan/fgcE1dc/h
+ZG3vG2hpb9rEJPYYeFug5EHrElxLG1yGZv/DTBZxdZuZMtEvQAbbby/vg6M5
+G5WwktVP+YQrzYPCsTINVL+oKIJS6SPKWXGHDroKUgzwJudTDZz7kdQATcWy
+61ATvqsFlvreKg7ELk7ySTgUazTAnu6MKnitorAfyp72DUA74/IwlExHWWG6
+acEBT2RMfYVXyyNWBRE99boQmCfRTcK66mU3nInmLsIz36eXIHNbUAAbve/E
+lG0CLZdDnHp/iQeFfJd8BbHr7nA2NIUqPbH4t6N1Cjojuf5xxPyVcjpcUJwK
+hmv6CsIgx6ny20BM68pkwjiGNCKeqEizRsL/862CNw==
+  "]]
+},
+WindowSize->{1350, 709},
+WindowMargins->{{-2, Automatic}, {Automatic, 96}},
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (September 9, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 16619, 335, 1249, "Input"],
+Cell[17180, 357, 3307, 81, 212, "Input"],
+Cell[20490, 440, 1873, 37, 152, "Input"],
+Cell[22366, 479, 3096, 79, 179, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
